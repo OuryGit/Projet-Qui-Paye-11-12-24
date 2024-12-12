@@ -1,0 +1,144 @@
+body { 
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  background: #fdfdfd; /* Blanc */
+  color: #333333; /* Texte gris foncé */
+}
+
+a {
+  text-decoration: none;
+  color: #8e44ad; /* Violet */
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #9b59b6; /* Violet plus clair */
+}
+
+.container {
+  min-height: 500px; /* Conteneur agrandi */
+  width: 600px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  background: #fff; /* Blanc */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+}
+
+.logo h1 {
+  font-family: "Pacifico", cursive;
+  color: #1abc9c; /* Turquoise */
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2);
+}
+
+.input_container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input {
+  flex-grow: 1;
+  border: 1px solid #dcdcdc; /* Gris clair */
+  background: #fff; /* Blanc */
+  color: #333333; /* Texte gris foncé */
+  font-size: 18px;
+  border-radius: 8px 0px 0px 8px;
+  padding: 12px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #8e44ad; /* Violet */
+  background: #fff; /* Blanc */
+}
+
+button {
+  border-radius: 0px 8px 8px 0px;
+  background: #8e44ad; /* Violet */
+  color: #ffffff;
+  font-size: 16px;
+  padding: 12px;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background: #9b59b6; /* Violet plus clair */
+}
+
+.list_of_names {
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px; /* Espace uniforme entre les éléments */
+}
+
+.list_of_names div {
+  margin: 0;
+  background: #1abc9c; /* Turquoise */
+  color: #ffffff; /* Texte blanc */
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 15px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.list_of_names div:hover {
+  background: #16a085; /* Turquoise plus foncé */
+  color: #ffffff;
+}
+
+.error_label {
+  color: #e74c3c; /* Rouge vif */
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.action_button {
+  cursor: pointer;
+  border: 2px solid #8e44ad; /* Violet */
+  color: #8e44ad;
+  font-size: 16px;
+  width: 240px;
+  text-align: center;
+  padding: 12px;
+  border-radius: 12px;
+  margin: 20px auto 0;
+  display: block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.action_button:hover {
+  background: #8e44ad; /* Violet */
+  color: #ffffff; /* Texte blanc */
+}
+
+.result_value {
+  font-size: 50px;
+  color: #1abc9c; /* Turquoise */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.result_container h1 {
+  font-family: "Pacifico", cursive;
+  color: #8e44ad; /* Violet */
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
