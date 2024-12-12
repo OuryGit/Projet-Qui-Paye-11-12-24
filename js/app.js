@@ -40,7 +40,8 @@ createApp({
                 data.error = 'Désolé, pas de nom vide';
                 return false
             }
-            if(data.names.includes(value)){
+                    // Convertir le nom saisi et les noms existants en minuscules pour la comparaison
+            if (data.names.some(name => name.toLowerCase() === value.toLowerCase())) {
                 data.error = 'Désolé, le nom doit être unique';
                 return false;
             }
